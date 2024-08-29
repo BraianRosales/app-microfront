@@ -1,0 +1,29 @@
+<div class="shell">
+  <div class="shell-navbar">
+    <div class="shell-navbar-logo" (click)="navigateTo('')">
+      <img src="../assets/SVG/logo.svg" />
+    </div>
+    <div class="shell-navbar-list">
+      <div class="shell-navbar-item" (click)="navigateTo('')">
+        <img src="../assets/SVG/icon-home-blue.svg" /><span>Inicio</span>
+      </div>
+      <div class="shell-navbar-item" (click)="navigateTo('socios')">
+        <img src="../assets/SVG/icon-person-blue.svg" /><span>Socios</span>
+      </div>
+      <div class="shell-navbar-item" (click)="navigateTo('comercios')">
+        <img src="../assets/SVG/icon-comercios-blue.svg" /><span
+          >Comercios</span
+        >
+      </div>
+      <div class="shell-navbar-item" (click)="navigateTo('mix')">
+        <img src="../assets/SVG/icon-parametros-blue.svg" /><span>Mix</span>
+      </div>
+    </div>
+  </div>
+  <div class="shell-container">
+    <div class="shell-container-header"></div>
+    <div class="shell-container-microfrontends">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

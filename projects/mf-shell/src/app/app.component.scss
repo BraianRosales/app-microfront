@@ -1,0 +1,53 @@
+.shell {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 98vh;
+
+    &-navbar {
+        width: 18%;
+        box-shadow: 1px -1px 5px 1px gainsboro;
+
+        &-logo {
+            height: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-list {
+            height: 84%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding-left: 50px;
+        }
+
+        &-item {
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            gap: 15px;
+            color: #0F4FCC;
+        }
+    }
+
+    &-container {
+        width: 82%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        &-header {
+            width: 100%;
+            height: 70px;
+            background-color: #f9f9f9;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.426);
+        }
+
+        &-microfrontends {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
